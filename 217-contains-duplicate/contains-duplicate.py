@@ -1,5 +1,5 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         
-        return len(list(set(nums)))!=len(nums)
+        return len(set(nums))!=len(nums)
         
