@@ -1,5 +1,15 @@
 class Solution:
+
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        groups = defaultdict(list)
+        for s in strs:
+            freq = [0] * 26
+            for ch in s:
+                freq[ord(ch) - ord('a')] += 1   # assumes lowercase a–z
+            groups[tuple(freq)].append(s)        # tuple is hashable & safe
+        return list(groups.values())
+
+    def groupAnagrams1(self, strs: List[str]) -> List[List[str]]:
         a=[]
 
         for i in strs:
