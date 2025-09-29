@@ -3,6 +3,6 @@ class Solution:
 
         if len(set(nums))==len(nums):
             return False
-        
-        return True
+        else:
+            return True
         
