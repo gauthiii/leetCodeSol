@@ -17,10 +17,7 @@ class Solution:
 
         #reverse
         for i in range(len(nums)-1,-1,-1):
-            if i==len(nums)-1:
-                x[i]=x[i]*post
-            else:
-                x[i]=post*x[i]
+            x[i]=x[i]*post
             post=nums[i]*post
 
         # print(x)
