@@ -13,7 +13,7 @@ class Solution:
             else:
                 x.append(nums[i-1]*x[i-1])
 
-        print(x)
+        # print(x)
 
         #reverse
         for i in range(len(nums)-1,-1,-1):
@@ -23,7 +23,7 @@ class Solution:
                 x[i]=post*x[i]
             post=nums[i]*post
 
-        print(x)
+        # print(x)
 
         return x
 
