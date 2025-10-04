@@ -8,7 +8,7 @@ class Solution:
         while j-i>=0:
             h = min(height[i],height[j])
             a=max(a,((j-i)*h))
-            print(i,j,h,a)
+            # print(i,j,h,a)
             if h == height[i]:
                 i+=1
             else:
