@@ -3,7 +3,7 @@ class Solution:
         c=0
 
         for i in operations:
-            if '+' in i:
+            if "+" in i:
                 c+=1
             else:
                 c-=1
